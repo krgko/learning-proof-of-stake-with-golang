@@ -125,13 +125,14 @@ Block 10 Info:
       Se = coin at stake
       ```
 
-    - How does PoS works?
-      1. A validator must stake
-      2. Validators are selected in a pseudo-random depending on their wealth
-      3. When a node gets chosen to forge the next block, check the transactions in the block are valid. The validators verify for double-spending then the group of verified hash transactions would push into a Merkle tree with one root hash.
-      4. After verifying the transactions, the forger signs the block and broadcast it on the network. Other else that does not chosen are called attestors to cross verify the transactions such the block is valid and it signed by a valid forger.
-      5. **Time in PoS is divided into slots and epochs**. One slot is the time set to create a block e.g., ETH2.0 one slot is of 12 secs. 32 slots make up an epoch, thus one epoch is 6.4 mins (32 \* 12 = 384; 384/60 = 6.4 mins). **Each slot represent the possibility for the block to be added to the Blockchain.** If forger misses an assigned duty, a slot may be empty.
-      6. After the block has been validated and added to the Blockchain, the node who got the chance to forge the block gets a reward. As a reward, the forger receives the transaction fees. The attestors also get rewarded for making correct attestations.
+  - How does PoS works?
+
+    1. A validator must stake
+    2. Validators are selected in a pseudo-random depending on their wealth
+    3. When a node gets chosen to forge the next block, check the transactions in the block are valid. The validators verify for double-spending then the group of verified hash transactions would push into a Merkle tree with one root hash.
+    4. After verifying the transactions, the forger signs the block and broadcast it on the network. Other else that does not chosen are called attestors to cross verify the transactions such the block is valid and it signed by a valid forger.
+    5. **Time in PoS is divided into slots and epochs**. One slot is the time set to create a block e.g., ETH2.0 one slot is of 12 secs. 32 slots make up an epoch, thus one epoch is 6.4 mins (32 \* 12 = 384; 384/60 = 6.4 mins). **Each slot represent the possibility for the block to be added to the Blockchain.** If forger misses an assigned duty, a slot may be empty.
+    6. After the block has been validated and added to the Blockchain, the node who got the chance to forge the block gets a reward. As a reward, the forger receives the transaction fees. The attestors also get rewarded for making correct attestations.
 
   - Nothing at stake: a validators decide to forge on 2 chains (forked). It can increase chances of double-spending. to prevent this issue, add some punishments like freeze a validator, slash a validator, etc.
   - Casper: on Ethereum, the validators will be penaltized if they are do fraudance activity like slashing their stakes.
