@@ -140,3 +140,11 @@ Block 10 Info:
   - PoW vs PoS
     - PoW: mine, 51% Atk, less capital for validators, powerful miner or majority is king.
     - PoS: mint/forge, Nothing at Stake, more capital for validators, wealthy validator is king.
+  - Improvements
+    - [] Unit tests
+    - [] Concurrency
+    - [] Decentralization -> Multiple machine
+    - [] Refactoring
+    - [] Weighting
+    - [] Tokenization -> Block reward adjustment
+    - [] Smart Contract
