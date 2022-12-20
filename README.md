@@ -120,7 +120,7 @@ Block 10 Info:
       ```bash
       T = Tb * S * Se
 
-      Tb = the base target value calc by multiple of block's target value and amount of time that required to forge that block
+      Tb = the base target value calc by multiplying the previous block's target value and amount of time that required to forge that block
       S = time in seconds
       Se = coin at stake
       ```
